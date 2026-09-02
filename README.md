@@ -31,10 +31,10 @@ Lokální soubory lze dodat bez stahování:
   --uboot ./u-boot.kwb
 ```
 
-URL obrazů a výchozí hodnoty lze nastavit proměnnými `ROOTFS_URL`, `UBOOT_URL`,
-`SERVER`, `REMOTE_USER`, `SSH_KEY` a `WORKDIR`. Výchozí URL nejsou nastavené,
-protože původní odkazy na `doozan.com` již vracejí 404. Před použitím ověřte,
-že stažené obrazy odpovídají konkrétnímu modelu a bootloaderu.
+Výchozí rootfs se stahuje z veřejného Dropbox odkazu uloženého v `ROOTFS_URL`.
+URL obrazů a ostatní výchozí hodnoty lze změnit proměnnými `UBOOT_URL`,
+`ROOTFS_URL`, `SERVER`, `REMOTE_USER`, `SSH_KEY` a `WORKDIR`. Před použitím
+ověřte, že stažený obraz odpovídá konkrétnímu modelu a bootloaderu.
 
 U-Boot se standardně do disku nezapisuje. Volbu `--write-uboot` použijte jen
 s obrazem ověřeným pro konkrétní NSA320; běžný systém s U-Bootem v NAND tuto
