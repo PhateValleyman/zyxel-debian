@@ -1,0 +1,10 @@
+# Local build artifacts and downloaded images
+rootfs.tar.bz2
+u-boot.kwb
+Debian-*-rootfs-bodhi.tar.bz2
+*.img
+*.iso
+
+# Editor and OS files
+.DS_Store
+*~
